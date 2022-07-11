@@ -50,8 +50,8 @@ public class MeteorGuiTheme extends GuiTheme {
             .name("scale")
             .description("Scale of the GUI.")
             .defaultValue(1)
-            .min(0.75)
-            .sliderRange(0.75, 4)
+            .min(Double.MIN_NORMAL)
+            .sliderRange(0.0000001, 4)
             .onSliderRelease()
             .onChanged(aDouble -> {
                 if (mc.currentScreen instanceof WidgetScreen) ((WidgetScreen) mc.currentScreen).invalidate();
